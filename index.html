@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +10,39 @@
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
 </head>
+
 <body>
   <h1></h1>
 
   <div class="container">
-          <form id="formulario" data-toggle="validator" >
+    <form id="formulario" data-toggle="validator" class="needs-validation" >
       <div class="row justify-content-md-center">
         <legend>Formulário</legend>
 
         <div class="col-lg-6 lg-2">
-        <label for="validationDefault01">Nome</label>
-        <input type="text" class="form-control" id="nome" placeholder="nome" required>
+          <label for="validationDefault01">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="nome" required>
         </div>
 
         <div class="col-lg-6 lg-2">
-        <label for="validationDefault03">Sobrenome</label>
-        <input type="text" class="form-control" id="sobrenome" placeholder="sobrenome" required>
+          <label for="validationDefault03">Sobrenome</label>
+          <input type="text" class="form-control" id="sobrenome" placeholder="sobrenome" required>
         </div>
 
         <div class="col-md-3 mb-2">
-        <label for="validationDefault03">Idade</label>
-        <input type="text" class="form-control" maxlength="3"  id="idade" placeholder="idade" 
-        onkeypress="return tratadorDeFormulario.aceitaSomenteNumeros(event)" required>
+          <label for="validationDefault03">Idade</label>
+          <input type="text" class="form-control"  maxlength="3" id="idade" placeholder="idade"
+            onkeypress="return tratadorDeFormulario.aceitaSomenteNumeros(event)" required>
         </div>
 
         <div class="col-md-3 md-3">
-        <label for="validationDefault03">CPF</label>
-        <input type="text" class="form-control" id="cpf" placeholder="cpf" 
-        onkeypress="return tratadorDeFormulario.aceitaSomenteNumeros(event)" required>
+          <label for="validationDefault03">CPF</label>
+          <input type="text" class="form-control" id="cpf" placeholder="cpf"
+            onkeypress="return tratadorDeFormulario.aceitaSomenteNumeros(event)" required>
 
         </div>
       </div>
@@ -47,76 +50,77 @@
       <br>
       <div class="row justify-content-md-center">
 
-      <div class="col-md-6 md-3">
-      <label for="validationDefault03">Endereço</label>
-      <input type="text" class="form-control" id="endereco" placeholder="endereço" required>
-      </div>
-      
-      <div class="form-group col-md-3">
-      <label for="inputState">Estado</label>
-      <select id="estado" class="form-control" >
-        <option selected>Escolha...</option required>
+        <div class="col-md-6 md-3">
+          <label for="validationDefault03">Endereço</label>
+          <input type="text" class="form-control" id="endereco" placeholder="endereço" required>
+        </div>
+
+        <div class="form-group col-md-3">
+          <label for="inputState">Estado</label>
+          <select id="estado" class="form-control">
+            <option selected>Escolha...</option required>
             <option value="AC">Acre</option>
-          	<option value="AL">Alagoas</option>
-          	<option value="AP">Amapá</option>
-          	<option value="AM">Amazonas</option>
-          	<option value="BA">Bahia</option>
-          	<option value="CE">Ceará</option>
-          	<option value="DF">Distrito Federal</option>
-          	<option value="ES">Espírito Santo</option>
-          	<option value="GO">Goiás</option>
-          	<option value="MA">Maranhão</option>
-          	<option value="MT">Mato Grosso</option>
-          	<option value="MS">Mato Grosso do Sul</option>
-          	<option value="MG">Minas Gerais</option>
-          	<option value="PA">Pará</option>
-          	<option value="PB">Paraíba</option>
-          	<option value="PR">Paraná</option>
-          	<option value="PE">Pernambuco</option>
-          	<option value="PI">Piauí</option>
-          	<option value="RJ">Rio de Janeiro</option>
-          	<option value="RN">Rio Grande do Norte</option>
-          	<option value="RS">Rio Grande do Sul</option>
-          	<option value="RO">Rondônia</option>
-          	<option value="RR">Roraima</option>
-          	<option value="SC">Santa Catarina</option>
-          	<option value="SP">São Paulo</option>
-          	<option value="SE">Sergipe</option>
-          	<option value="TO">Tocantins</option>
-      </select>
-    </div>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
 
-      <div class="col-md-3 md-4">
-      <label for="validationDefault05">Cep</label>
-      <input type="text" class="form-control"  id="cep" placeholder="cep" 
-      onkeypress="return tratadorDeFormulario.aceitaSomenteNumeros(event)" required>
-      </div>
+        <div class="col-md-3 md-4">
+          <label for="validationDefault05">Cep</label>
+          <input type="text" class="form-control" id="cep" placeholder="cep"
+            onkeypress="return tratadorDeFormulario.aceitaSomenteNumeros(event)" required>
+        </div>
 
       </div>
-      <button  id="salvar" type="submit" class="btn btn-success btn-lg">Salvar</button>
+      <button id="salvar" type="submit" class="btn btn-success btn-lg">Salvar</button>
       <button class="btn btn-warning" >Apagar tudo</button>
-      
-      </form>
-      <br>
-      <br>
 
-      <!-- <div class="alert alert-success" role="alert">
+    </form>
+    <br>
+    <br>
+
+    <!-- <div class="alert alert-success" role="alert">
         <h4 class="alert-heading">Well done!</h4>
         <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
         <hr>
         <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
       </div> -->
-      </div>
+  </div>
 
-      <div id="div-Alerta" class="container">
-        <!-- div para exibir o alerta criado no javaScript -->
-        <!-- <h1> Resultado</h1> -->
-      </div>
+  <div id="div-Alerta" class="container">
+    <!-- div para exibir o alerta criado no javaScript -->
+    <!-- <h1> Resultado</h1> -->
+  </div>
 
   <!-- jQuery (necessario para os plugins Javascript do Bootstrap) -->
   <script src="js/javascript.js"></script>
-  
+
 
 
 </body>
+
 </html>
